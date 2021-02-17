@@ -11,6 +11,15 @@
 <meta name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
 
+      <script>
+        function doSomething() {
+            // alert(document.forms[0].elements['name'].value);
+            var url = document.forms[0].elements['name'].value;
+            window.location = url;
+            return false;
+        }
+        </script>
+
 <head>
     <link rel="stylesheet" href="css_tabs.css">
 </head>
@@ -58,6 +67,14 @@
             </tr>
         </table>
         <br>
+
+        <br>앱링크 테스트<br>
+
+        <form onsubmit="return doSomething();" class="my-form">
+            <input type="text" name="name">
+            <input type="submit" value="Submit">
+        </form>
+
      </div>
 
 </body>
