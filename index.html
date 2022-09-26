@@ -6,7 +6,7 @@
 </body>
 </html> -->
 
-<html>
+<!-- <html>
 <meta charset="utf-8">
 <meta name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
@@ -18,6 +18,12 @@
             window.location = url;
             return false;
         }
+
+        function imageShow() {
+ 
+            document.getElementById('image').style.display = "block";
+            document.getElementById('btnidid').style.display = "none";
+        }
         </script>
 
 <head>
@@ -25,8 +31,20 @@
 </head>
 
 <body>
+
+
+
+    <input type="submit" 
+       value="배드신후 리얼한 상황 !!!! 후방주의" 
+       onclick="imageShow()" id="btnidid"
+       style="font-size : 70px; width: 70%; height: 200px;" /> 
+
+       <img id="image" src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20210915115837/gfg3.png"
+            alt="GFG image" />
+
     
-    <div class="tab1_content">
+     <div class="tab1_content">
         <br>BIOMTR 아이폰앱 데모동영상<br>
         <table border="1">
             <tr>
@@ -79,8 +97,54 @@
         <a href="http://211.254.218.134:8080/appWeb/landing/exchange?pubCompanyId=GV0000000003&companyId=MB0100051048">착한페이랜딩url</a>
         <a href="KTolleh00189://notice/detail?pubCompanyId=GV0000000005">착한페이스키타이동</a>
 
-     </div>
+     </div> -->
 
+<!-- </body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <style>
+ 
+        /* Set display to none for image*/
+        #image {
+            display: none;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div>
+        <h1>배드신후 리얼한 상황 !!!! 후방주의</h1>
+        <h3>아래버튼을 클릭하면 이미지를 볼수 있습니다.</h3>
+ 
+        <!-- Add id to image -->
+        <img id="image" src="./contents/baedshhwo.png"
+            alt="GFG image" />
+    </div>
+ 
+    <button type="button"
+        onclick="show()" id="btnID">
+        클릭 클릭!! 
+    </button>
+ 
+    <script>
+        function show() {
+ 
+            /* Access image by id and change
+            the display property to block*/
+            document.getElementById('image')
+                    .style.display = "block";
+ 
+            document.getElementById('btnID')
+                    .style.display = "none";
+        }
+    </script>
 </body>
-
+ 
 </html>
