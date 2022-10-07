@@ -22,7 +22,7 @@
     </div>
  
     <button type="button"
-        onclick="show()" id="btnID">
+        onclick="ViewLayer();" id="btnID">
         클릭 클릭!! 
     </button>
  
@@ -36,6 +36,10 @@
  
             document.getElementById('btnID')
                     .style.display = "none";
+        }
+
+        function ViewLayer(){
+            document.getElementById("image").style.display='inline';
         }
     </script>
 </body>
